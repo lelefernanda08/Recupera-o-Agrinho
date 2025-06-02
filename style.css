@@ -1,0 +1,228 @@
+/* style.css */
+
+/* Importa a fonte Inter do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: 'Inter', sans-serif; /* Aplica a fonte Inter */
+    margin: 0; /* Remove margens padrão do body */
+    padding: 0; /* Remove preenchimento padrão do body */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura/altura total */
+    line-height: 1.6; /* Espaçamento entre linhas para melhor legibilidade */
+    background-color: #f4f7f6; /* Cor de fundo suave */
+    color: #333; /* Cor de texto padrão */
+}
+
+/* Estilo para o container principal, centralizando o conteúdo */
+.container {
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 0 1rem; /* Adiciona preenchimento nas laterais */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #28a745; /* Um verde vibrante */
+    color: white; /* Texto branco */
+    padding: 1rem 0; /* Ajustado para dar mais espaço ao conteúdo */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    border-bottom-left-radius: 15px; /* Cantos arredondados na parte inferior */
+    border-bottom-right-radius: 15px;
+}
+
+header h1 {
+    font-size: 2.5rem; /* Ajustado para ser um pouco menor e caber com a logo */
+    margin-bottom: 0.2rem; /* Margem inferior */
+    font-weight: 900; /* Peso da fonte extra-bold */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+}
+
+header p {
+    font-size: 1.1rem; /* Tamanho para o subtítulo */
+    font-weight: 300; /* Peso da fonte leve */
+}
+
+/* Estilos para a navegação */
+nav ul {
+    list-style: none; /* Remove marcadores de lista */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    padding: 0.5rem 1rem; /* Preenchimento para tornar a área clicável maior */
+    display: block; /* Ocupa todo o espaço disponível para o clique */
+    border-radius: 5px; /* Cantos arredondados para os links */
+    transition: background-color 0.3s ease; /* Transição suave para o hover */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo sutil no hover */
+    color: #c6f6d5; /* Cor do texto no hover (Tailwind green-200) */
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    background-color: #ffffff; /* Fundo branco para o conteúdo principal */
+    margin: 2rem auto; /* Margem superior/inferior e centralização */
+    padding: 2rem; /* Preenchimento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+}
+
+/* Estilos para as seções de conteúdo */
+section {
+    margin-bottom: 2.5rem; /* Espaçamento entre as seções */
+    padding: 1.5rem; /* Preenchimento interno das seções */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05); /* Sombra interna sutil */
+}
+
+section h2 {
+    font-size: 2.5rem; /* Tamanho do título da seção */
+    font-weight: 700; /* Peso da fonte bold */
+    margin-bottom: 1.5rem; /* Margem inferior */
+    padding-bottom: 0.5rem; /* Preenchimento inferior para a borda */
+    border-bottom: 4px solid; /* Borda inferior colorida */
+}
+
+/* Cores específicas para cada seção */
+section:nth-of-type(1) { /* Do Campo à Mesa */
+    background-color: #e0f7fa; /* Azul claro */
+    border-color: #00bcd4; /* Ciano */
+}
+section:nth-of-type(1) h2 {
+    color: #00796b; /* Azul esverdeado escuro */
+    border-color: #00bcd4;
+}
+
+section:nth-of-type(2) { /* Danças Tradicionais */
+    background-color: #f3e5f5; /* Lilás claro */
+    border-color: #ab47bc; /* Roxo */
+}
+section:nth-of-type(2) h2 {
+    color: #6a1b9a; /* Roxo escuro */
+    border-color: #ab47bc;
+}
+
+section:nth-of-type(3) { /* Museu do Campo */
+    background-color: #fffde7; /* Amarelo muito claro */
+    border-color: #ffd600; /* Amarelo vibrante */
+}
+section:nth-of-type(3) h2 {
+    color: #f57f17; /* Laranja amarelado */
+    border-color: #ffd600;
+}
+
+/* Estilos para a seção de informações adicionais */
+section:nth-of-type(4) {
+    background-color: #f0f4f7; /* Cinza azulado claro */
+    border-color: #90a4ae; /* Cinza azulado */
+    display: grid; /* Usa grid para layout */
+    grid-template-columns: 1fr; /* Uma coluna por padrão */
+    gap: 2rem; /* Espaçamento entre os itens do grid */
+}
+
+section:nth-of-type(4) h2 {
+    color: #455a64; /* Cinza escuro */
+    border-color: #78909c;
+}
+
+section:nth-of-type(4) h3 {
+    font-size: 1.8rem; /* Tamanho do título da subseção */
+    font-weight: 600; /* Peso da fonte semi-bold */
+    margin-bottom: 1rem;
+    color: #546e7a;
+    border-bottom: 2px solid #b0bec5; /* Borda inferior sutil */
+    padding-bottom: 0.3rem;
+}
+
+section:nth-of-type(4) ul {
+    list-style: none; /* Remove marcadores de lista */
+    padding: 0;
+}
+
+section:nth-of-type(4) li {
+    margin-bottom: 0.8rem; /* Espaçamento entre itens da lista */
+    display: flex; /* Para alinhar ícone e texto */
+    align-items: center;
+}
+
+section:nth-of-type(4) li span {
+    margin-right: 0.5rem; /* Espaçamento entre ícone e texto */
+    font-size: 1.2rem; /* Tamanho do ícone */
+    color: #26a69a; /* Cor do ícone */
+}
+
+/* Estilos para imagens dentro das seções */
+section img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para as imagens */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #34495e; /* Um azul escuro */
+    color: white; /* Texto branco */
+    padding: 1.5rem 0; /* Preenchimento superior e inferior */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Sombra superior */
+    border-top-left-radius: 15px; /* Cantos arredondados na parte superior */
+    border-top-right-radius: 15px;
+}
+
+footer p {
+    margin: 0.5rem 0; /* Margem para parágrafos no rodapé */
+    font-size: 0.9rem; /* Tamanho menor para o texto do rodapé */
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    /* Layout de duas colunas para seções com imagem e texto */
+    section .flex-col.md\:flex-row {
+        flex-direction: row;
+    }
+
+    section .md\:w-1\/3 {
+        width: 33.3333%;
+    }
+
+    section .md\:w-2\/3 {
+        width: 66.6667%;
+    }
+
+    /* Layout de duas colunas para a última seção em telas maiores */
+    section:nth-of-type(4) {
+        grid-template-columns: 1fr 1fr; /* Duas colunas */
+    }
+}
+
+@media (max-width: 767px) {
+    header h1 {
+        font-size: 2rem; /* Ajusta o tamanho do título para telas menores */
+    }
+
+    header p {
+        font-size: 1rem; /* Ajusta o tamanho do subtítulo */
+    }
+
+    section h2 {
+        font-size: 2rem; /* Ajusta o tamanho do título da seção */
+    }
+
+    section h3 {
+        font-size: 1.5rem; /* Ajusta o tamanho do subtítulo da subseção */
+    }
+
+    /* Centraliza imagens em telas pequenas */
+    section .md\:w-1\/3 {
+        width: 100%;
+        text-align: center;
+    }
+}
